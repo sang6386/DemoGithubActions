@@ -1,18 +1,18 @@
-name: thử nghiệm đọc file READMEREADME
+name: thử nghiệm đọc file README
 on:
-  push: 
-    branches: ["main'"]
+  push:
+    branches: ["main"]
 
 jobs:
   thuc_hanh_doc_file:
-    runs on: ubuntu-latesr
+    runs-on: ubuntu-latest   # ← sửa "run on" → "runs-on"
 
-  steps: 
-  - name: Bước 1 - Xin chào
-    run: echo "HELLO HUTECH!"
-  
-  - name: Bước 2 - Tải code
-   uses: actions/checkout@v6 
-  
-  - name: Bước 3 - Đọc file
-    run: cat README.md 
+    steps:
+      - name: Bước 1 - Xin chào
+        run: echo "HELLO HUTECH!"
+
+      - name: Bước 2 - Tải code
+        uses: actions/checkout@v6
+
+      - name: Bước 3 - Đọc file
+        run: cat README.md
