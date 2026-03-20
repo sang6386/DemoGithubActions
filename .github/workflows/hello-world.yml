@@ -5,7 +5,7 @@ on:
 
 jobs:
   thuc_hanh_doc_file:
-  run on: ubuntu-latesr
+    run on: ubuntu-latesr
 
   steps: 
   - name: Bước 1 - Xin chào
